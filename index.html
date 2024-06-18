@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="./static/css/style.css">
+
+<script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js" defer></script>
+<script src="./static/js/script.js" defer></script>
+<title>SE147 Streaming Service</title>
+</head>
+<body class="container d-flex flex-column align-items-center">
+    <div class="home">
+        <h1>WELCOME TO THE POKEMON API SEARCH PAGE</h1>
+        <p>Use the search bar to look up a pokemon and click the search bar </p>
+    </div>
+
+    <form onsubmit="handleSubmit(event)" class="row border rounded shadow w-75 p-5 g-3 mt-5">
+        <div class="form-floating col-12">
+            <input type="text" class="form-control" id="search" name="search" placeholder="Search for a pokemon">
+            <label for="search" class="ps-3">Search for a pokemon</label>
+        </div>
+        <button type="submit" class="btn btn-outline-info col-6 ms-3">Search</button>
+    </form>
+    
+
+     <div class="row row-cols-1 justify-content-center my-5 g-3 w-100"id="pokemon-display">
+
+     </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
